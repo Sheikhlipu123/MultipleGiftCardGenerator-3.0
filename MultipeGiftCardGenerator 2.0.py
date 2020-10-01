@@ -1,3 +1,4 @@
+# Multiple gift card generator based on 2.0
 import random
 from random import randint
 import time
@@ -9,9 +10,10 @@ total = input("How Many Would You Like To Generate? ")
 number = int(total)
 file = (total + " Generated.txt")
 file2 = 'GiftCardsCodes.txt'
-mode = input("Which Would You Like To Generate?\nAmazon\nRoblox\nWebkinz\nFortnite\nIMVU\nEbay\nNetflix\niTunes\nPaypal\nVisa\nPokemonTGC\nPlaystation\nSteam\nXbox\nPlayStore\nMinecraft\n")
+mode1 = input("Which Would You Like To Generate?\nAmazon\nRoblox\nWebkinz\nFortnite\nIMVU\nEbay\nNetflix\niTunes\nPaypal\nVisa\nPokemonTGC\nPlaystation\nSteam\nXbox\nPlayStore\nMinecraft\n")
+mode=mode1.lower()
 #Minecraft
-if(mode == "Minecraft"):
+if(mode == "minecraft"):
     for x in range(number):
         generate1 = random.choice(gentype)
         generate2 = random.choice(gentype)
@@ -31,7 +33,7 @@ if(mode == "Minecraft"):
         with open(file, 'a') as out:
           out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+space2+generate9+generate10+generate11+generate12+newline)
 #Amazon
-if(mode == "Amazon"):
+if(mode == "amazon"):
     for x in range(number):
         generate1 = random.choice(gentype)
         generate2 = random.choice(gentype)
@@ -53,7 +55,7 @@ if(mode == "Amazon"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+generate9+generate10+space2+generate11+generate12+generate13+generate14+newline)
 #iTunes
-if(mode == "iTunes"):
+if(mode == "itunes"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -77,7 +79,7 @@ if(mode == "iTunes"):
             out.write(generate1+generate2+generate3+generate4+generate5+generate6+generate7+generate8+generate9+generate10+generate11+generate12+generate13+generate14+generate15+generate16+newline)
 
 #Paypal
-if(mode == "Paypal"):
+if(mode == "paypal"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -98,7 +100,7 @@ if(mode == "Paypal"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+space2+generate9+generate10+generate11+generate12+newline)
 #Playstation
-if(mode == "Playstation"):
+if(mode == "playstation"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -120,7 +122,7 @@ if(mode == "Playstation"):
             out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+space2+generate9+generate10+generate11+generate12+newline)
 
 #Steam
-if(mode == "Steam"):
+if(mode == "steam"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -145,7 +147,7 @@ if(mode == "Steam"):
             out.write(generate1+generate2+generate3+generate4+generate5+space1+generate6+generate7+generate8+generate9+generate10+space2+generate11+generate12+generate13+generate14+generate15+newline)
 
 #Visa
-if(mode == "Visa"):
+if(mode == "visa"):
     types = input("Card Or Prepaid Code? ")
     if(types == "Prepaid Code"):
         gentype = '0123456789'
@@ -225,7 +227,7 @@ if(mode == "Visa"):
                 out.write(generate1+generate2+generate3+generate4+generate5+space1+generate6+generate7+generate8+generate9+generate10+space2+generate11+generate12+generate13+generate14+generate15+space3+generate16+generate17+generate18+generate19+generate20+space4+generate21+generate22+generate23+generate24+generate25+space+month+slash+year+space5+generate26+generate27+generate27+newline)
     
 #Xbox
-if(mode == "Xbox"):
+if(mode == "xbox"):
     gentype = 'ABCDEFGHJHIKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -261,7 +263,7 @@ if(mode == "Xbox"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+generate5+space1+generate6+generate7+generate8+generate9+generate10+space2+generate11+generate12+generate13+generate14+generate15+space3+generate16+generate17+generate18+generate19+generate20+space4+generate21+generate22+generate23+generate24+generate25+newline)
 #PlayStore
-if(mode == "PlayStore"):
+if(mode == "playStore"):
     gentype = 'ABCDEFGHJHIKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -292,7 +294,7 @@ if(mode == "PlayStore"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+space2+generate9+generate10+generate11+generate12+space3+generate13+generate14+generate15+generate16+space4+generate17+generate18+generate19+generate20+newline)
 #PokemonTGC
-if (mode == "PokemonTGC"):
+if (mode == "pokemontgc"):
     gentype = 'ABCDEFGHJHIKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -315,7 +317,7 @@ if (mode == "PokemonTGC"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+space1+generate4+generate5+generate6+generate7+space2+generate8+generate9+generate10+space3+generate11+generate12+generate13+newline)
 #Netflix
-if(mode == "Netflix"):
+if(mode == "netflix"):
     for x in range(number):
         generate1 = random.choice(gentype)
         generate2 = random.choice(gentype)
@@ -337,7 +339,7 @@ if(mode == "Netflix"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+space1+generate5+generate6+generate7+generate8+generate9+generate10+space2+generate11+generate12+generate13+generate14+newline)
 #Ebay
-if(mode == "Ebay"):
+if(mode == "ebay"):
     for x in range(number):
         generate1 = random.choice(gentype)
         generate2 = random.choice(gentype)
@@ -353,7 +355,7 @@ if(mode == "Ebay"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+generate5+generate6+generate7+generate8+generate9+generate10+newline)
 #Fortnite
-if(mode == "Fortnite"):
+if(mode == "fortnite"):
     for x in range(number):
         generate1 = random.choice(gentype)
         generate2 = random.choice(gentype)
@@ -374,7 +376,7 @@ if(mode == "Fortnite"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+generate5+space1+generate6+generate7+generate8+generate9+space2+generate10+generate11+generate12+generate13+newline)
 #Roblox
-if(mode == "Roblox"):
+if(mode == "roblox"):
     gentype = '0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -394,7 +396,7 @@ if(mode == "Roblox"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+space1+generate4+generate5+space1+generate6+space2+generate7+generate8+generate9+space2+generate10+newline)
 #Webkinz
-if(mode == "Webkinz"):
+if(mode == "webkinz"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
@@ -409,7 +411,7 @@ if(mode == "Webkinz"):
         with open(file, 'a') as out:
             out.write(generate1+generate2+generate3+generate4+generate5+generate6+generate7+generate8+newline)
 #IMVU
-if(mode == "IMVU"):
+if(mode == "imvu"):
     gentype = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     for x in range(number):
         generate1 = random.choice(gentype)
