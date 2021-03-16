@@ -4,7 +4,7 @@
 
 ### Features.
 
->  ** Generate random gift cards like Amazon, Xbox and more.**
+>  **Generate random gift cards like Amazon, Xbox and more.**
 
 > **Runs in basic Python terminal.**
 
