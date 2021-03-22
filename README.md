@@ -20,7 +20,7 @@
 - Play store
 - Pokemon TGC
 - Netflix
-- Bay
+- eBay
 - Fortnite
 - Robolox
 - Webkinz
