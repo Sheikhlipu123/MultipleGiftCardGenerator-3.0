@@ -15,7 +15,7 @@ def g(rolls):
 	return result
 
 #interface
-print("Multiple Gift Card Generator by Sheikhlipu123")
+print("Multiple Gift Card Generator")
 print("")
 print("What Giftcard you need to generate?")
 
