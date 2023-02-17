@@ -1,4 +1,4 @@
-# Multiple Gift Card Generator -  `3.0`
+# Multiple Gift Card Generator -  `3.0`itunes
 
 ## A Random Gift Card generator using Python.
 
@@ -20,7 +20,7 @@
 - Play store
 - Pokemon TGC
 - Netflix
-- eBay
+ebay- eBay
 - Fortnite
 - Robolox
 - Webkinz

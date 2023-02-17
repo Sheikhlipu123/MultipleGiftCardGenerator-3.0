@@ -6,7 +6,7 @@ import random
 
 #functions
 def g(rolls):
-	data = "qwertyuioplkjhgfdsazxcvbnm1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
+	data = "qwertyuioplkjhgfdsiazxcvbnm1234567890QWERTYUIOPLKJHGFDSAZXCVBNM"
 	result = ""
 	while rolls >= 1:
 		c = random.choice(data)
